@@ -3,42 +3,41 @@
     Example: is waiting in line in a bank or a store to buy something
     the first person in the line will be the first out of the line.
     Example 2: A print queue when a no of people are printing documents
-
  */
 
-// function Queue() {
-//     let collection = [];
-//     this.print = function () {
-//         console.log(collection)
-//     };
-//     //removes item in the beginning of an array
-//     this.enqueue = function(element){
-//         collection.push(element)
-//     };
-//     this.dequeue = function () {
-//         return collection.shift();
-//     };
-//     //returns the 1st item in the queue
-//     this.front = function () {
-//         return collection[0];
-//     };
-//     this.size = function () {
-//         return collection.length;
-//     };
-//     this.isEmpty = function () {
-//         return (collection.length === 0);
-//     };
-// }
-//
-// let q = new Queue();
-// q.enqueue('a');
-// q.enqueue('b');
-// q.enqueue('c');
-// q.print();
-// q.dequeue();
-// console.log(q.front());
-// q.front();
-// q.print();
+function Queue() {
+    let collection = [];
+    this.print = function () {
+        console.log(collection)
+    };
+    //removes item in the beginning of an array
+    this.enqueue = function(element){
+        collection.push(element)
+    };
+    this.dequeue = function () {
+        return collection.shift();
+    };
+    //returns the 1st item in the queue
+    this.front = function () {
+        return collection[0];
+    };
+    this.size = function () {
+        return collection.length;
+    };
+    this.isEmpty = function () {
+        return (collection.length === 0);
+    };
+}
+
+let q = new Queue();
+q.enqueue('a');
+q.enqueue('b');
+q.enqueue('c');
+q.print();
+q.dequeue();
+console.log(q.front());
+q.front();
+q.print();
 
 
 // Priority Queues
@@ -89,3 +88,4 @@ pq.printCollection();
 pq.dequeue();
 console.log(pq.front());
 pq.printCollection();
+
